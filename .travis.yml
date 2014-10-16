@@ -3,6 +3,12 @@ before_install:
   - brew install qt
   - git clone https://github.com/mltframework/mlt.git
 script: qmake -r PREFIX=/usr/local
+notifications:
+  recipients:
+    - adi.ibanez@freestyleair.com
+  email:
+    on_success: change
+    on_failure: always
 os:
 #  - linux
   - osx
