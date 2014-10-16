@@ -1,0 +1,9 @@
+before_install:
+  - brew update
+  - brew install qt
+  - git clone https://github.com/mltframework/mlt.git
+script: qmake -r PREFIX=/usr/local
+os:
+#  - linux
+  - osx
+  
