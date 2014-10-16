@@ -1,7 +1,7 @@
 before_install:
   - brew update
   - brew install qt
-  - git clone https://github.com/mltframework/mlt.git
+#  - git clone https://github.com/mltframework/mlt.git
 script: qmake -r PREFIX=/usr/local
 notifications:
   recipients:
@@ -10,6 +10,4 @@ notifications:
     on_success: change
     on_failure: always
 os:
-#  - linux
   - osx
-  
